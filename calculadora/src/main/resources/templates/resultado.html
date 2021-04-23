@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculos</title>
+    <style type="text/css">
+        .container {
+    position: relative;
+  }
+  
+  #image {
+    position: left; 
+    margin-top: 5%;
+    width:600px;
+    height:600px;
+  }
+  
+ .texto {
+    position: absolute;
+    font-size: 28px;
+    left: 10%;
+    top: 135px;
+  }
+  .texto1 {
+    position: absolute;
+    margin-top: 7%;
+    left: 25%;
+    font-size: 24px;
+  }
+  .opcao1 {
+    position: absolute;
+    margin-top: 30%;
+    left: 34%;
+    font-size: 24px;
+  }
+  .Calc {
+    position: absolute;
+    margin-top: -20%;
+    left: 19%;
+    font-size: 24px;
+  }
+      </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <img id="image" src="https://i.ibb.co/RSnXhc8/3001-png-860.png" >
+        <br />
+        <div class="texto">
+        <p display=>O resultado da operação é: </p>
+        <p th:text="${resultado}"></p>
+    </div>
+    <div class="Calc">
+        <input type="button" value="Voltar" onClick="history.go(-1)">
+    </div>
+    </div>
+
+
+
+</body>
+</html>

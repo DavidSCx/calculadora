@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <style type="text/css">
+        .container {
+    position: relative;
+  }
+  
+  #image {
+    position: left; 
+    margin-top: 5%;
+    width:600px;
+    height:600px;
+  }
+  
+ .texto {
+    position: absolute;
+    font-size: 28px;
+    left: 10%;
+    top: 135px;
+  }
+  .texto1 {
+    position: absolute;
+    margin-top: 7%;
+    left: 25%;
+    font-size: 24px;
+  }
+  .opcao1 {
+    position: absolute;
+    margin-top: 30%;
+    left: 34%;
+    font-size: 24px;
+  }
+  .Calc {
+    position: absolute;
+    margin-top: 60%;
+    left: 40%;
+    font-size: 24px;
+  }
+  .titulo {
+    position: relative;
+    margin-top: 2%;
+    left: 2%;
+    font-size: 24px;
+  }
+      </style>
+</head>
+
+<body>
+    <div class="titulo">
+    <h1> CALCULADORA DO FUTURO</h1>
+</div>
+<div class="container">
+    
+    <img id="image" src="https://i.ibb.co/RSnXhc8/3001-png-860.png" >
+    <div class="texto">
+    <form method="POST" action="/calculadora/resultado">
+        <br />
+        <label for="numero1" >1° Numero</label>
+        <input type="numero1" id="numero1" name="numero1" required /><br /><br />
+        <label for="numero2">2° Numero</label>
+        <input type="numero2" id="numero2" name="numero2" required /><br /><br />
+        <div class="texto1">
+        <label for="operacao">Qual Operação</label><br /><br />
+        </div>
+        <div class="opcao1">
+        <select name="operacao">
+        
+        <option value="adicao" id="adicao" name="operacao">Adição</option>
+        <option value="subtracao" id="subtracao" name="operacao" >Subtração</option>
+        <option value="multiplicacao" id="multiplicacao" name="operacao" >Multiplicação</option>
+        <option value="divisao" id="divisao" name="operacao" >Divisão</option>
+        </select>
+    </div>
+    <div class="Calc">
+        <input type="submit" value="Calcular">
+    </div>
+    </form>
+</div>
+</div>
+
+</body>
+</html>
